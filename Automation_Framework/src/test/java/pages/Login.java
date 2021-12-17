@@ -1,22 +1,16 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
 import com.aventstack.extentreports.Status;
 
 import Utils.BaseClass;
 
-public class Login extends BaseClass {
+public class Login extends BaseClass{
 	
-	WebDriver driver;
 	By username = By.id("txtUsername");
 	By password = By.id("txtPassword");
 	By loginBtn = By.id("btnLogin");
-	
-	public Login(WebDriver driver) {
-		this.driver=driver;
-	}
 	
 
 	public void Open_Application() {

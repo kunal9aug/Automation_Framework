@@ -2,21 +2,15 @@ package tests;
 
 import static org.testng.Assert.assertEquals;
 
-import org.testng.annotations.*;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 
+import Utils.BaseClass;
 import pages.Login;
 
-import Utils.BaseClass;
-
 public class LoginTests extends BaseClass {
-	Login login;
-	@BeforeClass
-	public void BeforeClass() {
-		login = new Login(BaseClass.driver);
-	}
+	Login login = new Login();
 	
 	@Test
 	public void Login_TC1() {

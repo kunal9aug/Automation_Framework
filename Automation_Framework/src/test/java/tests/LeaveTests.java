@@ -1,6 +1,5 @@
 package tests;
 
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import Utils.BaseClass;
@@ -8,12 +7,7 @@ import pages.Leave;
 
 public class LeaveTests extends BaseClass {
 	
-	Leave leave = new Leave(driver);
-	
-	@BeforeClass
-	public void BeforeClass() {
-		leave = new Leave(BaseClass.driver);
-	}
+	Leave leave = new Leave();
 	
 	@Test
 	public void Leave_Test_01_Apply_Leave() {

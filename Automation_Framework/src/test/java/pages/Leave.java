@@ -1,7 +1,6 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
 import com.aventstack.extentreports.Status;
 
@@ -12,8 +11,7 @@ import Utils.Keyboard;
 import Utils.Mouse;
 import Utils.Wait;
 
-public class Leave extends BaseClass {
-	WebDriver driver;
+public class Leave extends BaseClass{
 	
 	By leave = By.xpath("//b[contains(text(),'Leave')]");
 	By assign_Leaves = By.xpath("//a[contains(text(),'Assign Leave')]");
@@ -23,10 +21,6 @@ public class Leave extends BaseClass {
 	By Leave_From_Date_Calendar_Input = By.id("applyleave_txtFromDate");
 	By Apply_Button = By.id("applyBtn");
 	
-	
-	public Leave(WebDriver driver) {
-		this.driver=driver;
-	}
 	
 	public void Hover_On_Leave() {
 		Mouse.Hover_On_Element(leave);
